@@ -11,9 +11,13 @@
 		<div>
   			<h1>Please enter a stock ticker eg. GOOG, and check desired features.</h1>
 		</div>
-		<form action="action_page.php">
- 			 Ticker Symbol:<br>
+		<form action="." method="POST">
+ 			 Ticker Symbol:
   			<input type="text" name="stockname"><br>
+			<input type="radio" name="stock" value="stockclose"> Closing Price<br>
+  			<input type="radio" name="stock" value="stockcloseadj"> Adjusted Closing Price<br>
+  			<input type="radio" name="stock" value="stockopen"> Opening Price<br>
+			<input type="radio" name="stock" value="stockopenadj"> Adjusted Opening Price
 			<input type="submit" value="Submit">
 		</form>
 	</body>
